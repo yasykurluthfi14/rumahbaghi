@@ -1,0 +1,92 @@
+.fixed-panel{
+	background-color:#212121;
+	width:40% !important;
+	overflow:hidden;
+	min-height:100%;
+	padding:80px;
+	position: fixed;
+	float: left;
+	z-index:1;
+}
+.navigation {
+    background-color: #292c33;
+    font-size: 1.125rem;
+    left: 0;
+    margin-bottom: 40px;
+    padding: 2em 80px;
+    position: fixed;
+    top: 0;
+    width: inherit;
+    z-index: 99999;
+}
+.header {    
+    position: relative;
+    z-index: 99;
+}
+.fixed-panel .content__inner {
+    height: 100%;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 4em 7em 5em 5em;
+    position: absolute;
+    top: 0;
+	width:100%;
+    width: calc(104%);
+}
+.project-info {
+    position: relative;
+}
+.project_list {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60%;
+    z-index: 999;
+}
+.project-title a,.project-title h3{
+	color:#666 !important;
+	transition: all 0.2s linear 0s;-webkit-transition: all 0.2s linear 0s;-moz-transition: all 0.2s linear 0s;-o-transition: all 0.2s linear 0s;
+}
+.project-title a:hover,.project-title a:hover h3{
+	color:#fff !important;
+}
+.project_list_small{
+	position:relative;
+	width:100%;
+	z-index:inherit;
+}
+.project_wrapper {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+	width:100%;
+    width: calc(100% + 17px);
+}
+.project_wrapper .page-section:hover:before{
+	opacity:.2;
+	transition: all 0.2s linear 0s;-webkit-transition: all 0.2s linear 0s;-moz-transition: all 0.2s linear 0s;-o-transition: all 0.2s linear 0s;
+}
+.color-text{
+	color:#ef3d35 !important;
+}
+.color-background{
+	background-color:#ef3d35 !important;
+}
+
+.aboutlist a,.aboutlist h3{
+	color:#666 !important;
+	transition: all 0.2s linear 0s;-webkit-transition: all 0.2s linear 0s;-moz-transition: all 0.2s linear 0s;-o-transition: all 0.2s linear 0s;
+}
+.aboutlist a:hover,.aboutlist a:hover h3{
+	color:#fff !important;
+}
+@media only screen and (max-width: 1024px) {
+.project_wrapper {
+    overflow: auto;
+    position: relative;
+	width:100%;    
+}
+}
